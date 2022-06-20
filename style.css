@@ -2,10 +2,23 @@ h2 {
     margin: 15px 0px 15px 0px;
 }
 
-#block1 {
-    width: 60%;
+#block1, #block2{
     border: 1px solid black;
     padding: 5px;
+}
+
+#parent{
+    display: flex;
+    justify-content: row;
+}
+
+#block1{
+    width: 60%;
+    margin-right: 10px;
+}
+
+#block2{
+    width: 38%;
 }
 
 img {
@@ -13,13 +26,11 @@ img {
     height : 180px;
 }
 
-#block2{
-    border: solid black 1px;
-    padding: 5px;
-    display: inline-block;
-
-}
-
 #title_size, #text_size, #content{
     width: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
