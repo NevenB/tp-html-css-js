@@ -4,25 +4,86 @@
 <head>
     <meta charset="utf-8">
     <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    
 
 </head>
 
+
 <body>
     <div id="block2">
+<h2>Panneau de configuration</h2>
         <form>
-            <label for="background_color">Changer la couleur du fond</label><br>
-            <input type="color" id="background_color" name="background_color"><br>
-            <label for="title_color">Changer la couleur du titre</label><br>
-            <input type="color" id="title_color" name="title_color"><br>
-            <label for="text_color">Changer la couleur du texte</label><br>
-            <input type="color" id="text_color" name="text_color"><br>
+            <label for="background_color">Changer la couleur du fond</label>
+            <input type="color" id="background_color" name="background_color">
+            <br><br>
+            <label for="title_color">Changer la couleur du titre</label>
+            <input type="color" id="title_color" name="title_color">
+            <br><br>
+            <label for="text_color">Changer la couleur du texte</label>
+            <input type="color" id="text_color" name="text_color">
+            <br><br>
             <label for="content">Saisir du contenu</label><br>
-            <textarea id="content" name="content" placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea><br>
-            <label for="title_size">Changer la taille du titre</label><br>
-            <input type="number" id="title_size" name="title_size" min="36" max="72" placeholder="Taille du titre entre 36 et 72 px"><br>
-            <label for="text_size">Changer la taille du texte</label><br>
-            <input type="number" id="text_size" name="text_size" min="12" max="36" placeholder="Taille du texte entre 12 et 36 px"><br>
+            <textarea id="content" name="content" placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
+            <br><br>
+            <label for="title_size">Changer la taille du titre</label>
+            <input type="number" id="title_size" name="title_size" min="36" max="72" placeholder="Taille du titre entre 36 et 72 px">
+            <br><br>
+            <label for="text_size">Changer la taille du texte</label>
+            <input type="number" id="text_size" name="text_size" min="12" max="36" placeholder="Taille du texte entre 12 et 36 px">
+            <br><br>
+            <label for = "title-align">Alignement du titre</label>
+            <br>
+            <select id="title-align" name="title-align">
+                <option value="Right">Aligner à droite</option>
+                <option value="Left">Aligner à gauche</option>
+                <option value="Center">Aligner au centre</option>
+            </select>
+            <br><br>
+            <label for="text-align">Alignement du texte</label>
+            <br>
+            <select id="text-align" name="text-align">
+                <option value="Right">Aligner à droite</option>
+                <option value="Left">Aligner à gauche</option>
+                <option value="Center">Aligner au centre</option>
+            </select>
+            <br><br>
+            <label for "font-title">Police titre</label>
+            <br>
+            <select id="font-title" name="font-title">
+                <option value="Arial">Arial</option>
+                <option value "Viking">Viking</option>
+                <option value="Helvetica">Helvetica</option>
+            </select>
+            <br><br>
+            <label for="font-text">Police texte</label>
+            <br>
+            <select id="font-text" name="font-text">
+                <option value="Arial">Arial</option>
+                <option value="Viking">Viking</option>
+                <option value="Helvetica">Helvetica</option>
+            </select>
+            <br><br>
+                  <input type="submit" value="changer ma photo">
+
+                  
+                
+
+
+            
+            
+
+            
+
+            
+
+
+            
+            
+    
         </form>
     </div>
 </body>
