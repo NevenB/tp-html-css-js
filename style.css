@@ -2,14 +2,14 @@ h2 {
     margin: 15px 0px 15px 0px;
 }
 
+#parent{
+    display: flex;
+    justify-content: center;
+}
+
 #block1, #block2{
     border: 1px solid black;
     padding: 5px;
-}
-
-#parent{
-    display: flex;
-    justify-content: row;
 }
 
 #block1{
@@ -33,4 +33,5 @@ img {
 form{
     display: flex;
     flex-direction: column;
+    
 }
