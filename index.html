@@ -22,7 +22,10 @@
                 into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
                 release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            <img src="cat.jpg" alt="cat picture">
+            <div id="img">
+                <img src="cat.jpg" alt="cat picture">
+            </div>
+                
         </div>
         <div id="block2">
             <h2>Panneau de configuration</h2>
@@ -34,7 +37,7 @@
                 <label for="text_color">Changer la couleur du texte</label>
                 <input type="color" id="text_color" name="text_color">
                 <label for="content">Saisir du contenu</label><br>
-                <textarea id="content" name="content"
+                <textarea id="content" name="content" rows="10" cols="50"
                     placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
                 <label for="title_size">Changer la taille du titre</label>
                 <input type="number" id="title_size" name="title_size" min="36" max="72"
@@ -66,9 +69,22 @@
                     <option value="Viking">Viking</option>
                     <option value="Helvetica">Helvetica</option>
                 </select>
-                <button type="button">Changer la photo</button>
-                <button type="button">A+</button>
-                <button type="button">A-</button>
+                <div id="photo_change">
+                
+                    <input type="url" id="photo_url" placeholder="source image locale ou url">
+                
+                    <button type="button" id="photo_button">Changer la photo</button>
+                
+                </div>
+                <div id="content_size">
+                
+                    <label for="text-align">Agrandir/rétrécir l'ensemble</label>
+                
+                    <button type="button" class="button_resize">A+</button>
+                
+                    <button type="button" class="button_resize">A-</button>
+                
+                </div>
             </form>
         </div>
 </body>

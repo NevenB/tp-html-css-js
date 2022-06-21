@@ -1,8 +1,100 @@
-#block1, #block2{
-    border: 1px solid black;
-    padding: 5px;
-}
-img {
-    width : 160px;
-    height : 180px;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        background-color: lightgreen;
+    }
+
+    h1 {
+        margin: 70px 0px 30px 0px;
+    }
+
+    #parent {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #block1,
+    #block2 {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=color] {
+        display: block;
+        min-height: 40px;
+        width: 35%;
+    }
+
+    input[type=number] {
+        display: block;
+        text-align: center;
+        height: 40px;
+        width: 75%;
+    }
+
+    input[type=url] {
+        margin: 5px 0;
+        display: block;
+        height: 40px;
+        width: 75%;
+        text-align: center;
+    }
+
+    button {
+        width: 20%;
+        height: 40px;
+    }
+
+    .button_resize {
+        width: 2em;
+    }
+
+    label {
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    #photo_button {
+        max-width: 120px;
+    }
+
+    select {
+        border-radius: 2px;
+        width: 20%;
+        height: 40px;
+        background-color: lightgrey;
+    }
+
+    #content {
+        margin-top: 0;
+        text-align: center;
+
+    }
+
+    #img {
+        border: 2px solid green;
+        border-radius: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #photo_change {
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 20px;
+        align-items: center;
+        align-content: center;
+    }
+
 }
