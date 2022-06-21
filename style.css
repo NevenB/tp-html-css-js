@@ -1,37 +1,8 @@
-h2 {
-    margin: 15px 0px 15px 0px;
-}
-
-#parent{
-    display: flex;
-    justify-content: center;
-}
-
 #block1, #block2{
     border: 1px solid black;
     padding: 5px;
 }
-
-#block1{
-    width: 60%;
-    margin-right: 10px;
-}
-
-#block2{
-    width: 38%;
-}
-
 img {
     width : 160px;
     height : 180px;
-}
-
-#title_size, #text_size, #content{
-    width: 80%;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    
 }
