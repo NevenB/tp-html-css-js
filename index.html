@@ -33,9 +33,9 @@
                 <input type="color" id="title_color" name="title_color">
                 <label for="text_color">Changer la couleur du texte</label>
                 <input type="color" id="text_color" name="text_color">
-                <label for="content">Saisir du contenu</label><br>
+                <label for="content">Saisir du contenu</label>
                 <textarea id="content" name="content"
-                    placeholder="Saisissez votre contenu à ajouter à la place du contenu principal"></textarea>
+                    placeholder="Saisissez votre contenu à ajouter à la place du contenu principal" rows="10" columns="50"></textarea>
                 <label for="title_size">Changer la taille du titre</label>
                 <input type="number" id="title_size" name="title_size" min="36" max="72"
                     placeholder="Taille du titre entre 36 et 72 px">
@@ -44,9 +44,9 @@
                     placeholder="Taille du texte entre 12 et 36 px">
                 <label for="title-align">Alignement du titre</label>
                 <select id="title-align" name="title-align">
-                    <option value="Right">Aligner à droite</option>
-                    <option value="Left">Aligner à gauche</option>
-                    <option value="Center">Aligner au centre</option>
+                    <option value="right">Aligner à droite</option>
+                    <option value="left">Aligner à gauche</option>
+                    <option value="center">Aligner au centre</option>
                 </select>
                 <label for="text-align">Alignement du texte</label>
                 <select id="text-align" name="text-align">
@@ -55,20 +55,26 @@
                     <option value="Center">Aligner au centre</option>
                 </select>
                 <label for="font-title">Police titre</label>
-                <select id="font-title" name="font-title">
+                <select id="font-title" name="font-title" aria-placeholder="Choisir une font pour le titre">
                     <option value="Arial">Arial</option>
                     <option value="Viking">Viking</option>
                     <option value="Helvetica">Helvetica</option>
                 </select>
-                <label for="font-text">Police texte</label>
-                <select id="font-text" name="font-text">
+                <label for="font-text">Police du texte</label>
+                <select id="font-text" name="font-text" aria-placeholder="Choisir une font pour le texte">
                     <option value="Arial">Arial</option>
                     <option value="Viking">Viking</option>
                     <option value="Helvetica">Helvetica</option>
                 </select>
-                <button type="button">Changer la photo</button>
-                <button type="button">A+</button>
-                <button type="button">A-</button>
+                <div id="photo_change">
+                    <input type="url" id="photo_url" placeholder="source image locale ou url">
+                    <button type="button" id="photo_button">Changer la photo</button>
+                </div>
+                <div id="content_size">
+                    <label for="text-align">Agrandir/rétrécir l'ensemble</label>
+                    <button type="button" class="button_resize">A+</button>
+                    <button type="button" class="button_resize">A-</button>
+                </div>
             </form>
         </div>
 </body>
